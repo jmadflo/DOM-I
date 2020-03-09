@@ -86,3 +86,6 @@ let contactHeader = document.querySelector(".contact h4");
 contactHeader.innerText = siteContent["contact"]["contact-h4"];
 
 let contactParagraphs = document.querySelectorAll(".contact p");
+contactParagraphs[0].innerText = siteContent["contact"]["address"];
+contactParagraphs[1].innerText = siteContent["contact"]["phone"];
+contactParagraphs[2].innerText = siteContent["contact"]["email"];
