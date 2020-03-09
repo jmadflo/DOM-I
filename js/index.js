@@ -47,3 +47,12 @@ for (let i = 0; i < navs.length; i++) {
   navs[i].innerText = siteContent["nav"][`nav-item-${i+1}`];
 }
 
+// cta
+let ctaHeader = document.querySelector("h1");
+ctaHeader.innerText = siteContent["cta"]["h1"];
+
+let ctaButton = document.querySelector("button");
+ctaButton.innerText = siteContent["cta"]["button"];
+
+let ctaImage = document.getElementById("cta-img");
+ctaImage.src = siteContent["cta"]["img-src"];
