@@ -80,3 +80,12 @@ let bottomTextContentParagraphs = document.querySelectorAll(".bottom-content .te
 bottomTextContentParagraphs[0].innerText = siteContent["main-content"]["services-content"];
 bottomTextContentParagraphs[1].innerText = siteContent["main-content"]["product-content"];
 bottomTextContentParagraphs[2].innerText = siteContent["main-content"]["vision-content"];
+
+// contact
+let contactHeader = document.querySelector(".contact h4");
+contactHeader.innerText = siteContent["contact"]["contact-h4"];
+
+let contactParagraphs = document.querySelectorAll(".contact p");
+contactParagraphs[0].innerText = siteContent["contact"]["address"];
+contactParagraphs[1].innerText = siteContent["contact"]["phone"];
+contactParagraphs[2].innerText = siteContent["contact"]["email"];
