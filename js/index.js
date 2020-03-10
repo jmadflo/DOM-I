@@ -42,9 +42,28 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 //nav links
-let navs = document.querySelectorAll("a");
-for (let i = 0; i < navs.length; i++) {
-  navs[i].innerText = siteContent["nav"][`nav-item-${i+1}`];
+
+//new link number 1
+let newLink = document.createElement("a");
+let newLinkText = document.createTextNode("New_Link 1");
+newLink.appendChild(newLinkText);
+document.querySelector("nav").appendChild(newLink);
+
+//new link number 2
+
+let newFrontLink = document.createElement("a");
+let newFrontLinkText = document.createTextNode("New_Link 2");
+newFrontLink.prepend(newFrontLinkText);
+document.querySelector("nav").prepend(newFrontLink);
+
+
+let links = document.querySelectorAll("a");
+for (let i = 1; i < links.length - 1; i++) {
+  links[i].innerText = siteContent["nav"][`nav-item-${i}`];
+}
+
+for (let j = 0; j < links.length; j++) {
+  links[j].style.color = "green";
 }
 
 // cta
